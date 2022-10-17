@@ -1,0 +1,19 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jest": true,
+    "node": true
+  },
+  "extends": ["airbnb", "airbnb/hooks"],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "ecmaFeatures": {
+      "impliedStrict": true,
+      "jsx": true
+    },
+    "sourceType": "module"
+  },
+  "root": true
+}
