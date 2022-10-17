@@ -1,0 +1,51 @@
+{
+  "name": "multisite-cron-manager",
+  "version": "0.1.0",
+  "author": "Matthew Boynes",
+  "dependencies": {
+    "@babel/polyfill": "^7.8.3",
+    "@wordpress/api-fetch": "^3.11.0",
+    "chalk": "^3.0.0",
+    "classnames": "^2.2.6",
+    "core-js": "^3.6.4",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "regenerator-runtime": "^0.13.3",
+    "whatwg-fetch": "^3.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/preset-react": "^7.8.3",
+    "babel-eslint": "^10.0.3",
+    "babel-jest": "^25.1.0",
+    "babel-loader": "^8.0.6",
+    "check-node-version": "^4.0.2",
+    "clean-webpack-plugin": "^3.0.0",
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-loader": "^3.0.3",
+    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.18.0",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "jest": "^25.1.0",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-stats-plugin": "^0.3.1"
+  },
+  "engines": {
+    "node": "12",
+    "npm": "6"
+  },
+  "scripts": {
+    "build": "webpack --mode=production",
+    "dev": "webpack --mode=development --watch",
+    "lint": "eslint --ext .jsx --ext .js .",
+    "preinstall": "npx check-node-version --package",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  }
+}
